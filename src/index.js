@@ -1,24 +1,18 @@
-const add = document.getElementById('add');
-const minus = document.getElementById('minus');
-const number = document.querySelector('span');
+const form = document.querySelector('form');
+const input = document.querySelector('input');
+const ul = document.querySelector('ul');
 
-let count = 0;
-
-number.innerText = count;
-
-const updateText = () => {
-  number.innerText = count;
+const createToDo = (toDo) => {
+  const li = document.createElement('li');
+  li.innerText = toDo;
+  ul.appendChild(li);
 };
 
-const handleAdd = () => {
-  count = count + 1;
-  updateText();
+const onSubmit = (e) => {
+  e.preventDefault();
+  const toDo = input.value;
+  input.value = '';
+  createToDo(toDo);
 };
 
-const handleMinus = () => {
-  count = count - 1;
-  updateText();
-};
-
-add.addEventListener('click', handleAdd);
-minus.addEventListener('click', handleMinus);
+form.addEventListener('submit', onSubmit);
