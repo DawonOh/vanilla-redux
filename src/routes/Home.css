@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  padding: 0.5em;
+  margin-right: 1em;
+  border: 1px solid #bdbdbd;
+  border-radius: 50px;
+  outline: none;
+}
+
+button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
