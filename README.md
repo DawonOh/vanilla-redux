@@ -13,3 +13,6 @@ Learning Vanilla-Redux and React-Redux
 
 ## 4. react_redux
 공부한 내용 : https://dawonoh.github.io/posts/React-Redux/
+
+## 5. redux_toolkit
+공부한 내용 : https://dawonoh.github.io/posts/Redux-Toolkit/
